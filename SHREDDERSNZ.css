@@ -45,14 +45,7 @@ html, body {
     font-size: 1.75em;
     color: #333;
     font-weight: normal;
-    padding-bottom: 1em;
-    
-}
-
-.weekly-deal-btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    padding-bottom: 1em; 
 }
 
 .nav ul {
@@ -131,8 +124,9 @@ html, body {
     cursor: pointer;
 }
 
-.Weekly-deal {
-    
+.slideshow-slide img {
+    width: auto;
+    height: 500px;
 }
 
 .NZ-weather {
@@ -142,34 +136,82 @@ html, body {
     margin: 1em;
 */
 }
+@keyframes moveSlideshow { 100% {
+    transform: translateX(-66.6666%);  
+  }
+}
+
+.slideshow-container {
+    width: 640px;
+    margin: auto;
+    border: 10px solid red;
+    overflow: hidden;
+/*    position: relative;*/
+}
+
+.slideshow-slide img {
+    width: 640px;
+    height: auto;
+}
+
+.slideshow-slide {
+    display: flex;
+    width: 100%;
+    height: 480px;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#nextBtn1{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#nextBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	right: 5%;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+#prevBtn{
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	left: 5%;
+	font-size: 30px;
+	cursor: pointer;
+}
+*/
+
+
+
+
 
 .NZ-weather:last-child {
     border-bottom: none;
 }
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    font-weight: bold;
-    width: 11%;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    width: 19%;
-}
-
 
 .btn-primary {
     color: white;

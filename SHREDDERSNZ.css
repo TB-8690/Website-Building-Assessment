@@ -19,9 +19,14 @@ html, body {
 * {
     font-family: "WensleyDemo";
     box-sizing: border-box;
-    color: #777;
+    color: #333;
 }
     
+.table-format table tr {
+    padding-bottom: 1em;
+    border-bottom: 1px solid black;
+/*    display: block;*/
+}
 
 
 .main-header {
@@ -109,12 +114,12 @@ html, body {
     font-size: 2.5em;
 }
 
-.about-band-image { 
+.about-board-image { 
     float: left;
     height: 200px;
     width: 200px;
     margin: 0 15px 15px 0;
-    border-radius: 50%;
+/*    border-radius: 50%;*/
 }
 
 .btn {
@@ -129,13 +134,7 @@ html, body {
     height: 500px;
 }
 
-.NZ-weather {
-/*
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin: 1em;
-*/
-}
+
 @keyframes moveSlideshow { 100% {
     transform: translateX(-66.6666%);  
   }
@@ -144,7 +143,7 @@ html, body {
 .slideshow-container {
     width: 640px;
     margin: auto;
-    border: 10px solid red;
+    border: 10px solid #333;
     overflow: hidden;
 /*    position: relative;*/
 }
@@ -177,7 +176,7 @@ html, body {
   -webkit-transform: rotate(135deg);
 }
 
-#nextBtn1{
+/*#nextBtn{*/
 	position: absolute;
 	top: 50%;
 	z-index: 10;
@@ -186,7 +185,7 @@ html, body {
 	cursor: pointer;
 }
 
-#nextBtn{
+#prevBtn{
 	position: absolute;
 	top: 50%;
 	z-index: 10;
@@ -206,7 +205,11 @@ html, body {
 */
 
 
-
+.about-paragraph p {
+    font-family: "Metal Mania";
+    color: red;
+    font-weight: normal;
+}
 
 
 .NZ-weather:last-child {
@@ -219,6 +222,7 @@ html, body {
     border: none;
     border-radius: .3em;
     font-weight: bold;
+     
 }
 
 .btn-primary:hover {
@@ -266,6 +270,7 @@ html, body {
 .shop-item-price {
     flex-grow: 1;
     color: #333;
+    font-size: 2em;
 }
 
 .shop-item-image {
